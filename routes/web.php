@@ -17,4 +17,5 @@ use App\Http\Controllers\HomeController;
 Auth::routes();
 
 // home page guest
-Route::get('/', [HomeController::class, 'index']);
+//Route::get('/', [HomeController::class, 'index']);
+Route::view('/{any}', 'layouts.app')->where('any','.*');

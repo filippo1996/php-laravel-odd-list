@@ -23,4 +23,23 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::name('api.')->group(function(){
     Route::resource('posts', PostController::class);
+    Route::get('/nav-top', function(){
+        return [
+            [
+                'path' => '/',
+                'label' => 'Home',
+                'routeName' => 'home'
+            ],
+            [
+                'path' => '/posts',
+                'label' => 'Posts',
+                'routeName' => 'posts'
+            ],
+            [
+              'path' => '/about',
+              'label' => 'Chi siamo?',
+              'routeName' => 'about'
+            ]
+        ];
+    });
 });

@@ -21,20 +21,7 @@
 </head>
 <body>
 
-    <div id="app" class="container">
-
-        <!-- start header -->
-        <views-header login="{{ route('login') }}"></views-header>
-        <!-- end header -->
-
-        <!-- start content -->
-        @yield('content')
-        <!-- end content -->
-
-        <!-- start footer -->
-        <footer><footer>
-        <!-- end footer -->
-
+    <div id="app">
     </div>
 
     @section('script-footer')

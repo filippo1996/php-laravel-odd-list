@@ -5,7 +5,7 @@
                 <a class="link-secondary" href="#">Logo</a>
             </div>
             <div class="col-4 d-flex justify-content-end align-items-center">
-                <a class="btn btn-sm btn-outline-secondary" :href="login">Accedi</a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Accedi</a>
             </div>
         </div>
     </header>
@@ -14,10 +14,7 @@
 
 <script>
 export default {
-  name: "Header",
-  props: {
-    login : String
-  }
+  name: "Header"
 
 };
 </script>
